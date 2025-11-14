@@ -1,4 +1,4 @@
-here# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 بوت @Ai_F90_Chat_Bot
 
