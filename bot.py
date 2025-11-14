@@ -29,9 +29,9 @@ from openai import OpenAI
 #   🔧 الإعدادات (عدّل هنا)
 # =============================
 
-TELEGRAM_BOT_TOKEN = "ضع_توكن_البوت_هنا"
-OPENAI_API_KEY     = "ضع_مفتاح_OPENAI_هنا"
-GOOGLE_API_KEY     = "ضع_مفتاح_GOOGLE_AI_STUDIO_هنا"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+OPENAI_API_KEY     = os.getenv("OPENAI_API_KEY")
+GOOGLE_API_KEY     = os.getenv("GOOGLE_API_KEY")
 
 BOT_NAME = "F90"
 
