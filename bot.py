@@ -18,10 +18,9 @@ import sqlite3
 import requests
 import base64
 from io import BytesIO
-
 import telebot
 from telebot import types
-from openai import OpenAI
+import openai
 
 # =============================
 #     الإعدادات من Environment
@@ -58,7 +57,7 @@ if not OPENAI_API_KEY:
     raise ValueError("متغير OPENAI_API_KEY غير موجود في Environment.")
 
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
-openai_client = OpenAI(api_key=OPENAI_API_KEY)
+openai.api_key = OPENAI_API_KEY
 
 # =============================
 #   دوال قاعدة البيانات
